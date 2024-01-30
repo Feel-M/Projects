@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="account.css">
+<script src="account.js"></script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="../index.html" >Home</a></li>
+        <li><a href="../Account/account.html" class="active" >Account Request</a></li>
+        <li><a href="../Technicalissue/TI.html">Technical Issues</a></li>
+        <li><a href="../notificationsadmin/n.html"  >Notifications</a></li>
+      </ul>
+     
+<div class="main">
+    <div class="blur" id="blur">
+    <div class="leftside">
+    </div>
+    <div class="rightside">
+
+<div class="reminders">
+   
+
+<div class="remindersright">
+    <h3> Close Bankers Accounts </h3>  
+    <input class="list" list="clients" id = "close">
+
+    <datalist  id="clients">
+        <!-- <option value="Choose Banker" selected>  -->
+      <option value="122252522, hamada">
+      <option value="255212455, Ramy">
+    
+    </datalist>
+
+    
+    <button class="AcceptBR" onclick="AcceptBR()">Close Account</button>
+    <button class="ViewRight" onclick="ViewRight()">View Banker Information</button>
+
+    <strong>
+   <br>   <br>
+    
+</strong>
+</div>
+
+<div class="remindersleft"> 
+    <h3> Open Banker Accounts </h3>
+
+    &nbsp; <br><br> <label for="Account number" style = "display: block;"> &nbsp; </label>
+    <input type="text" id="name22" placeholder=" New Employee FullName*">
+
+    &nbsp;<br> <label for="Account number" style = "display: block;"> &nbsp; </label>
+    <input type="text" id="a" placeholder="Username*">
+    &nbsp;<br> <label for="Account number" style = "display: block;"> &nbsp; </label>
+    <input type="text" id="b" placeholder="Password*">
+    &nbsp;<br> <label for="Account number" style = "display: block;"> &nbsp; </label>
+    <input type="text" id="c" placeholder="Employee ID*">
+    &nbsp;<br> <label for="Account number" style = "display: block;"> &nbsp; </label>
+    <input type="text" id="d" placeholder="Employee Postion*">
+    &nbsp; <br> <label for="Account number" style = "display: block;"> &nbsp; </label>
+    <input type="text" id="e" placeholder="Email*">
+    &nbsp; <br> <label for="Account number" style = "display: block;"> &nbsp; </label>
+    <input type="text" id="f" placeholder="National_ID*">
+    
+
+    <button class="openacc" onclick="openacc()"> Open Account </button>
+    
+
+    
+    <strong>    <br>   <br>
+        <p id="AAl"></p>
+        <p id="AAL2"></p> 
+    </strong> 
+    
+</div>
+
+<div class="openaccount" id="openaccount">
+    <strong>
+    <p id= "name" >Name: Clara Zakria Khalil </p>
+    <p id="adress">Adress: Fifth Statement, new cairo</p> 
+    <p id="mail" >Email: Clarazakaria@ggmmail.com</p>
+    <p id="date" >Date: 04/11/2001 </p>
+    <p id="NID">National ID: 125882522 </p>
+    <p id="Pnumber"> Phone Number: 012369857</p>
+    <p id="nationality"> Nationality: Egyptian </p>
+    <p id="type"> Type of the account: Saving Account</p>
+    <p id="salary"> Salary: 10,0000 Per Month</p>
+    <p id="Work"> Work place: Dell</p>
+    <p id="Note"> Banker Note: All information provided is correct</p>
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit" onclick="submit('openaccount')">close</button>
+</strong>
+</div>
+
+
+<div class="openaccount2" id="openaccount2">
+    <strong>
+    <p id= "name" >Name: Nada Nasr Mohamed </p>
+    <p id="adress">Adress: First Statement, new cairo</p> 
+    <p id="mail" >Email: Nada.nassrr@ggmmail.com</p>
+    <p id="date" >Date: 08/12/2001 </p>
+    <p id="NID">National ID: 232285554 </p>
+    <p id="Pnumber"> Phone Number: 01225838557</p>
+    <p id="nationality"> Nationality: Egyptian </p>
+    <p id="type"> Type of the account: Current Account</p>
+    <p id="salary"> Salary: 15,0000 PerMonth </p>
+    <p id="Work"> Work place: Microsoft</p>
+    <p id="Note"> Banker Note: SOURCE OF INCOME IS UNVERIFIED </p>
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit2" onclick="submit('openaccount2')">close</button>
+</strong>
+</div>
+
+
+<div class="closeaccount" id="closeaccount">
+    <strong>
+    <p id= "name" >Name: Ramy Nasr abdelmaged </p>
+    <p id= "uname" >UserName: Ramy_abdelmaged77 </p>
+    <p id= "pw" >Password: abdelmaged123555 </p>
+    <p id="adress">Employee ID: 12345689 </p> 
+    <p id="mail" >Employee Postion: Senior Relation Manager</p>
+    <p id="date" >Email: Ramy.abdelmaged@Bolt.com </p>
+    <p id="NID"> National_ID : 23228585514 </p>
+    <p id="type"> Loans: None</p>
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit2" onclick="submit('closeaccount')">close</button>
+</strong>
+</div>
+
+
+<div class="closeaccount2" id="closeaccount2">
+    <strong>
+        <p id= "name" >Name: hamada ahmed eissa </p>
+        <p id= "uname" >UserName: Ramy_eissa202 </p>
+        <p id= "pw" >Password: hibye1235 </p>
+        <p id="adress">Employee ID: 12345002 </p> 
+        <p id="mail" >Employee Postion: Operation Manager</p>
+        <p id="date" >Email: hamda.eissa@Bolt.com </p>
+        <p id="NID"> National_ID: 3025585514 </p>
+        <p id="type"> Loans: None</p>
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit3" onclick="submit('closeaccount2')">close</button>
+</strong>
+</div>
+
+
+
+   </body>
+</html>

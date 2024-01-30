@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="cards.css" >
+<script src="cards.js"></script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="../index.html" >Home</a></li>
+        <li><a href="../Account/account.html" >Account</a></li>
+        <li><a href="../Cards/cards.html" class="active">Cards</a></li>
+        <li><a href="../P&T/P&T.html">Payments & Transfers</a></li>
+        <li><a href="../Loans/loans.html">Loans</a></li>
+        <li><a href="../notifications/notifications.html">Notifications</a></li>
+        <li><a href="../Report/report.html">Report</a></li>
+      </ul>
+     
+        <div class="appform" id="appform">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id ='a2' placeholder="Full Name"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='b2' placeholder="Address"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='c2' placeholder="Email" required><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="date" id ='d2' placeholder="Date of Birth"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='e2' placeholder="ID Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='f2' placeholder="Phone Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='g2' placeholder="Account Number">
+            <label for="" class="confirmation" id="confirmation"> </label>
+            <button class="submit" onclick="submit('appform')">Submit</button>
+            <button class="opencancel" onclick="deactivateapp()">Cancel</button>
+        </div>
+        <div class="reportapp" id="reportapp">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id ='a3' placeholder="Full Name"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='b3' placeholder="Account Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id ='c3' placeholder="Card Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id ='d3' placeholder="Pin"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='e3' placeholder="Email" required><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id ='f3' placeholder="ID Number"><br>
+            
+
+            <select  id="reason" style="position: absolute; left: 37%; width: 35%;">
+                <option value="Choose a reason" selected>Choose a reason</option>
+              <option value="Theft">Theft</option>
+              <option value="Damaged">Damaged</option>
+              <option value="Missing">Missing</option>
+              
+              </select>
+           
+           <label for="" class="confirmation" id="confirmation"> </label>
+            <button class="submit" onclick="submit('reportapp')">Submit</button>
+            <button class="closecancel" onclick="deactivatereport()">Cancel</button>
+        </div>
+        <div class="parpay" id="parpay">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id ='a' placeholder="Full Name"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='b' placeholder="Account Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='c' placeholder="Card Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" id ='d' placeholder="Card Pin"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="amountgiven" type="number" id ='e' placeholder="Amount"><br>
+
+           
+           <label for="" class="confirmation" id="confirmation"> </label>
+            <button class="submit" onclick="submit('parpay')">Submit</button>
+            <button class="closecancel" onclick="deactivatepay()">Cancel</button>
+        </div>
+
+
+        <div class="title">Account</div>
+      
+<div class="main">
+    <div class="blur" id="blur">
+    <div class="leftside">
+
+<div class="cards">
+     Cards
+    <br>
+   <BR></BR>
+   <img src="Assets/card.jfif" alt="" width="60%"  height="40%" >
+<br>
+<br>
+   <label for="" > Total Amount Due:        $<label for="" id="cash">2520</label> </label>
+</div>
+<br>
+<div class="cardpay">
+   <strong>  Card Payments</strong>
+    <br>
+    <br>
+    We offer the convenient payment options to help you manage your account effectively. Whether you prefer to make partial or full payments, we have you covered.
+    
+     
+  <button class="partialpay" onclick="activatepay()"> Partial Payment </button>
+  <button class="fullpay" onclick="fullpay()"> Full Payment </button>
+
+</div>
+
+    </div>
+
+    <div class="rightside">
+        <div class="announcement">
+            <img class="report" src="Assets/images.jfif" alt="" width="10%" height="100%">
+           
+            <div class="anntitle"><h3> &nbsp; Introducing Bolt's Credit Cards - Empowering Your Financial Freedom
+
+            </h3></div>
+        
+            <div class="article">Unlock a world of possibilities with Bolt's credit cards. Whether you're looking to make everyday purchases, plan your dream vacation, or manage unexpected expenses, our range of credit cards is designed to cater to your unique needs. Experience convenience, flexibility, and financial empowerment like never before.</div>
+            
+           
+        
+        </div>
+<br>
+<div class="newapplication">
+    <h3>Simplify Your Financial Life</h3>
+    At Bolt, we understand the importance of having a reliable and convenient payment tool. That's why we offer a range of credit cards designed to suit your unique needs. Applying for a credit card with us is simple and can unlock a world of benefits and financial flexibility.
+<button class="openbutton" onclick="activateapp()"> Apply Now</button>
+</div>
+<div class="report"><h3>Prompt Action for Your Security </h3>
+
+    At Bolt, we prioritize the security of your financial transactions. If your credit card is missing or stolen, it is essential to take immediate action to protect your finances. Once you fill out the form it will be automatically deactivated and a new one will be issued.
+<button class="reportbutton" onclick="activatereport()"> Report</button>
+
+</div>
+
+
+
+    </div>
+
+</div>
+    
+        </div>
+    
+      
+ 
+</div>
+   </body>
+</html>

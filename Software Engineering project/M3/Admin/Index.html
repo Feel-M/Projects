@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+</head>
+<body>
+    <ul>
+      <div class="overlay" id="overlay"></div>
+   
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="subnav">
+          <button class="subnavbtn"  class="active"  >Settings <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="/M3/Admin/PI/pi.html">Personal information</a>
+            <a><button onclick = "showPopup()" style="border: 0mm; color: white; font-size: x-large; background-color: gray;font-family: 'Times New Roman', Times, serif;">Logout</button></a>
+          </div>
+        <a href="#home"></a>
+      
+      </div>
+      <a href="/M3/Contact/contact.html">Contact</a>
+      </div>
+    </ul>
+       
+      <div class="blur" id="blur">
+
+        <div class="title">Admin Portal</div>
+        
+<div class="portalnav">
+
+
+
+<div class="nav">
+    <ul class="unorderedlist">
+      <div class="overlay1" id="overlay1"></div>
+
+         <li class="orderedlist"><a href="Account/account.html" > <img src="../Client/Assets/account.png" alt="" width="20%" height="50%"> <br> Account Requests</a></li>
+      </ul > 
+      <ul class="unorderedlist2"> <li class="orderedlist">
+        <div class="overlay1" id="overlay2"></div>
+
+        <li class="orderedlist"><a href="Technicalissue/TI.html"><img src="../Client/Assets/report.jfif" alt="" width="30%" height="10%"><br>Technical Issues</a></li>
+        <li class="orderedlist"><a href="notificationsadmin/n.html"><img src="../Client/Assets/notification.png" alt=""width="35%" height="50%"><br> Notifications</a></li>
+      </ul > 
+
+      </div>
+      <div class="popup" id="popup">
+        <p style="color: white;">Are you sure you want to log out?</p>
+        <button onclick="logout()">Yes</button>
+         <button onclick="closePopup()">No</button>
+       </div>
+
+</div>
+</div>
+   </body>
+</html>

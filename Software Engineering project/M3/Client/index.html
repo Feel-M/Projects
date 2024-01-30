@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+</head>
+<body>
+    <ul class="topNavigation">
+        <div class="overlay" id="overlay"></div>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="./Contact/contact.html">Contact</a></li>
+        <div class="navbar">
+          <div class="subnav">
+            <button class="subnavbtn">Settings <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href= "PersonalInformation/pi.html" style="text-align: center; margin-left: 0.5%; 
+              font-family: 'Times New Roman', Times, serif; font-size: large; margin-top: 0.6%;">Personal information</a>
+              <a style="width: 7%; height: 100%; border-left: 2px solid #ccc;">
+                  <button class=" buttonA" onclick = "showPopup()" style="font-size: large; font-family: 'Times New Roman', Times, serif; 
+                  background-color: gray; border: 0; color: white; height: 100%;"> Logout</button>
+              </a>
+            </div>
+          <a href="#home"></a>
+        
+        </div>
+      </ul>
+      <div class="blur" id="blur">
+
+        <div class="title">Client Portal</div>
+        
+<div class="portalnav">
+
+
+
+<div class="nav">
+    <ul class="unorderedlist">
+        <div class="overlay1" id="overlay1"></div>
+        <li class="orderedlist"><a href="Account/account.html" style = "margin-top: 20%; margin-left: 7%;"> <img src="./Assets/account.png" alt="" width="70%" height="70%"> <br> Account</a></li>
+        <li class="orderedlist"><a href="Cards/cards.html"><img src="./Assets/card.png" alt="" width="60%" height="600%">Cards</a></li>
+        <li class="orderedlist"><a href="P&T/P&T.html" style = "margin-top: 5%;"><img src="./Assets/transfer.png" alt="" width="30%" height="10%"><br> Payments & Transfers</a></li>
+       
+        
+      </ul > 
+      <ul class="unorderedlist2"> <li class="orderedlist">
+        <div class="overlay1" id="overlay2"></div>
+        <a href="Loans/loans.html" style = "margin-top: 13%;"><img src="./Assets/loan.png" alt=""width="70%" height="70%"><br>Loans</a></li>
+        <li class="orderedlist"><a href="notifications/notifications.html"><img src="./Assets/notification.png" alt=""width="50%" height="50%"><br> Notifications</a></li>
+        <li class="orderedlist" style = "margin-top: 1.5%;"><a href="./Report/report.html"><img src="./Assets/report.jfif" alt="" width="40%" height="60%"> <br> Report Issues</a></li></ul>
+</div>
+<div class="popup" id="popup">
+  <p style="color: white;">Are you sure you want to log out?</p>
+  <button onclick="logout()">Yes</button>
+    <button onclick="closePopup()">No</button>
+ </div>
+
+</div>
+</div>
+   </body>
+</html>

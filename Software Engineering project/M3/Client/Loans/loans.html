@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="loans.css">
+<script src="loans.js"></script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="../index.html" >Home</a></li>
+        <li><a href="../Account/account.html" >Account</a></li>
+        <li><a href="../Cards/cards.html">Cards</a></li>
+        <li><a href="../P&T/P&T.html">Payments & Transfers</a></li>
+        <li><a href="loans.html" class="active">Loans</a></li>
+        <li><a href="../notifications/notifications.html">Notifications</a></li>
+        <li><a href="../Report/report.html">Report</a></li>
+      </ul>
+     
+        <div class="loanapplication" id="loanapplication">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id = 'a' placeholder="Full Name"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'b'placeholder="Address"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'c' placeholder="Email" required><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="date" id = 'd'placeholder="Date of Birth"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'e' placeholder="ID Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'f' placeholder="Phone Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="file" id = 'g' ><br>
+            <fieldset>
+                <legend>Select Loan type:</legend>
+            
+                <div>
+                  <input type="radio" id="car" name="action" value="Car"
+                         >
+                  <label for="car">Car</label>
+                  <input type="radio" id="personal" name="action" value="personal">
+                  <label for="personal">Personal</label>
+                </div>
+            
+                <div>
+                  
+                </div>
+            
+            
+            </fieldset>
+            <label for="" class="confirmation" id="confirmation"> </label>
+            <button class="submit" onclick="submit('loanapplication')">Submit</button>
+            <button class="applicationcancel" onclick="deactivateapplication()">Cancel</button>
+        </div>
+        <div class="loanpaymentapp" id="loanpaymentapp">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id = 'a2' placeholder="Full Name"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'b2' placeholder="ID Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'c2' placeholder="Account Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'd2' placeholder="Loan Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'e2' placeholder="Routing Number" required><br>
+            
+           
+           <label for="" class="confirmation" id="confirmation"> </label>
+            <button class="submit" onclick="submit('loanpaymentapp')">Submit</button>
+            <button class="closecancel" onclick="deactivatepayment()">Cancel</button>
+        </div>
+
+
+
+      
+<div class="main">
+    <div class="blur" id="blur">
+    <div class="leftside">
+
+<div class="cards">
+    <h3>Personal Lending Options</h3>
+
+  
+   No matter your goals, we offer a full range of personal loan products to meet your needs. From home improvement to vacation financing, we'll work with you to find the best possible solution.
+<br>
+
+</div>
+<br>
+<div class="contact">
+    <h3>Questions regarding the servicing of your loan with Bolt?</h3>
+    <br>
+    If you have questions about your payment, or if we can help in any way, please call the our Customer Care Team toll-free at 1-800-xxx-xxxx.
+    
+     
+  
+</div>
+
+    </div>
+
+    <div class="rightside">
+<div class="loanpayment">
+<h1 >&nbsp; Make a Loan Payment</h1>
+<h4>&nbsp;Save yourself time and postage each month. Make your Bolt Bank loan payment online – from your Device.
+</h4><br>
+<div class="leftpayment"><ol>
+    <li>Pay with your savings or checking account. 
+    </li><br>
+    <li>Payments are processed same-day.</li><br>
+    <li>Registered users can set up automatic payments to pay your loan or pay as you go.</li>
+  
+</ol></div>
+
+<button class="singlepaymentbutton" onclick="activatepayment()"> Single Payment </button>
+<div class="rightpayment">
+   <p>Required:</p><ol>
+    <li>Your Bank OZK loan account number 
+    </li><br>
+    <li>A checking or savings account number used for payments.</li><br>
+    <li>The routing number for your checking or savings account.</li>
+  
+</ol></div>
+
+<button class="recurringpaymentbutton" onclick="activatepayment()"> Recurring Payments</button>
+
+  
+
+</div>
+<br>
+<div class="loanmessage">
+    <h3> Personal Loans and Car Loans Tailored to Your Needs</h3>
+
+   
+
+At Bolt, we understand that achieving your dreams and fulfilling your financial goals often require additional funds. Whether you're planning to purchase a new car or need extra cash for personal expenses, our range of loan options is designed to meet your unique needs.
+
+
+</div>
+<div class="loanrequirements"><h3>Whats Needed? </h3>
+
+    <ol>
+        <li>Must be over the age of 18.</li><br>
+        <li>Must have a valid ID.</li><br>
+        <li>Must have a valid Address.</li><br>
+        <li>Must provide bank & financial statements & loan Proposal documents .</li>
+    </ol>
+<button class="applicationbutton" onclick="activateapplication()"> Apply</button>
+
+</div>
+
+
+
+    </div>
+
+</div>
+    
+        </div>
+    
+      
+ 
+</div>
+   </body>
+</html>

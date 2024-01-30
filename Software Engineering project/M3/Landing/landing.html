@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="landing.css">
+<script src="landing.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="landing.html" class="active">Home</a></li>
+        <li><a href="/M3/Contact/contact.html">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+      </ul>
+      <div class="blur" id="blur">
+         <div class="sidepic"><img class="pic" src="assets/Bolt.jpg" ></div>
+      <p class="head">Bolt.</p>
+      <p class="text">Banking Done In a Flash.</p>
+      <button onclick="showlogon()">Sign In.</button>
+
+     
+  <p class="missionheader">Our Mission:</h1>
+      <p class="mission">"Continuing Our Promise Of Commitment While Delivering Consistent Quality Experiences And Providing Options And Banking Solutions That Meet Your Needs"</p>
+      <p class="visionheader">Our Vision:</h1>
+      <p class="vision">"To Accelerate The World’s Transition To Sustainable Banking."</p>
+  </div>
+  <div class="logon" id="logon" > sign in
+    <label class="logintitle">Log In</label>
+    <input type="text" class="username" id="username" placeholder="  Username"><br><br>
+    <input type="password" class="password" id="password" placeholder="  Password"><br><br>
+
+    <label class="loginerror" id="loginerror"></label>
+
+    <button id="cancelbutton" class="cancelbutton" type="button" onclick="hidelogon()">Cancel</button>
+    <button class="loginbutton" type="button" onclick="login()">Login</button>
+
+</div>
+   </body>
+</html>

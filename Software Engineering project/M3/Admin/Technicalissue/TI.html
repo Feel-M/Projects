@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="TI.css">
+<script src="TI.js"></script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="../index.html" >Home</a></li>
+        <li><a href="../Account/account.html"  >Account Request</a></li>
+        <li><a href="../Technicalissue/TI.html" class="active">Technical Issues</a></li>
+        <li><a href="../notificationsadmin/n.html"  >Notifications</a></li>
+      </ul>
+     
+      
+
+
+
+      
+<div class="main">
+    <div class="blur" id="blur">
+    <div class="leftside">
+
+<div class="notifications">
+    <h3>Technical Issues</h3><br><br><br>
+    <div><strong>Technical Issues #1440: </strong> <br> <br>
+        Client number: 123456 <br> 
+        <p id="1">  I can not see my transactions  </p>
+       
+        </div>
+        <br><br><br><br><br><br>
+        <div><br><strong>Technical Issues #1441: </strong> <br><br>
+            Client number: 101110 <br>
+            <p id="2"> The homepage does not load</p>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div><br><strong>Technical Issues #1442:</strong> <br><br>
+            Client number: 00009 <br>
+            <p id="3">  Cant login  </p>
+        </div>
+<br>
+
+</div>
+<br>
+
+
+    </div>
+
+   <div class="rightside">
+
+        <div class="form">
+       
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input id = "clientid" type="text" placeholder="Client ID" required><br><br><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <textarea name="message" id="messaage" cols="40" rows="15" placeholder=""> Message...</textarea>
+            <label for="" class="confirmation" id="confirmation"> </label>
+            <button class="submit" onclick="submit()">Resolve Issue</button>
+        
+        </div>
+        <br>
+    </div>

@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="../Account Requests/Acoount.css">
+<script src="../Account Requests/Account.js"></script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="../index.html" >Home</a></li>
+        <li><a href="../Account Requests/Account.html"class="active" >Account Requests</a></li>
+        <li><a href="../Card Requests/Card.html  " >Cards Requests </a></li>
+        <li><a href="../Payments & Transfers/payments.html">Payments & Transfers</a></li>
+        <li><a href="../Loan Requests/Loan.html">Loans Requests</a></li>
+        <li><a href="../Notifictions/notifications.html"  >Notifications</a></li>
+        <li><a href="../Report issues/Report.html"  >Report Issues</a></li>
+      </ul>
+     
+<div class="main">
+    <div class="blur" id="blur">
+    <div class="leftside">
+    </div>
+    <div class="rightside">
+
+<div class="reminders">
+   
+
+<div class="remindersright">
+    <h3> Close Accounts Requests</h3>  
+    <input class="list" list="clients" id = "close">
+
+    <datalist  id="clients">
+      <option value="122252522, Natalie">
+      <option value="255212455, Mario">
+      <!-- <option value="225563258, Ali">
+      <option value="115852522, Mariam"> -->
+    </datalist>
+
+    
+    <button class="AcceptBR" onclick="AcceptBR()">Accept</button>
+    <button class="RejectBR" onclick="RejectBR()">Reject</button>
+    <button class="ViewRight" onclick="ViewRight()">View</button>
+
+    <strong>
+   <br>
+    <p id="AAr"> Accepted Accounts --> None</p>
+    <p id="RAr"> Rejected Accounts --> None</p> 
+</strong>
+</div>
+
+<div class="remindersleft"> 
+    <h3> Open Accounts Requests</h3>
+    <input class="list" list="clients2" id = "open">
+
+    <datalist  id="clients2">
+      <option value="125882522, Youssef">
+      <option value="252132455, Nour">
+      <!-- <option value="611213258, Nour">
+      <option value="116569525, Youssef">
+      <option value="111155852, Mustafa"> -->
+    </datalist> 
+    <button class="AcceptBL" onclick="AcceptBL()"> Accept </button>
+    <button class="RejectBL" onclick="RejectBL()"> Reject </button>
+    <button class="ViewLeft" onclick="ViewLeft()">View</button>
+
+    
+    <strong> <br>
+        <p id="AAl"> Accepted Accounts --> None</p>
+        <p id="RAl"> Rejected Accounts --> None</p> 
+    </strong> 
+    
+</div>
+
+<div class="openaccount" id="openaccount">
+    <strong>
+    <p id= "name" >Name: Youssef ezz Mohamed</p>
+    <p id="adress">Adress: Fifth Statement, new cairo</p> 
+    <p id="mail" >Email: Youssefezz@ggmmail.com</p>
+    <p id="date" >Date: 04/11/2001 </p>
+    <p id="NID">National ID: 125872522 </p>
+    <p id="Pnumber"> Phone Number: 012369867</p>
+    <p id="nationality"> Nationality: Egyptian </p>
+    <p id="type"> Type of the account: Saving Account</p>
+    <p id="salary"> Salary: 100,0000 Per Month</p>
+    <p id="Work"> Work place: Dell</p>
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit" onclick="submit('openaccount')">close</button>
+</strong>
+</div>
+
+
+<div class="openaccount2" id="openaccount2">
+    <strong>
+    <p id= "name" >Name: Nour Mohamed Hussien </p>
+    <p id="adress">Adress: First Statement, new cairo</p> 
+    <p id="mail" >Email: NourMohamed@ggmmail.com</p>
+    <p id="date" >Date: 08/12/2001 </p>
+    <p id="NID">National ID: 2322855354 </p>
+    <p id="Pnumber"> Phone Number: 01225838257</p>
+    <p id="nationality"> Nationality: Egyptian </p>
+    <p id="type"> Type of the account: Current Account</p>
+    <p id="salary"> Salary: 50,0000 PerMonth </p>
+    <p id="Work"> Work place: Microsoft</p>
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit2" onclick="submit('openaccount2')">close</button>
+</strong>
+</div>
+
+
+<div class="closeaccount" id="closeaccount">
+    <strong>
+    <p id= "name" >Name: Mario Zakaria Khallaf </p>
+    <p id="adress">Account Number: 12345689 </p> 
+    <p id="mail" >Pin: 0000</p>
+    <p id="date" >Email: Mario.zakaria.com </p>
+    <p id="NID"> ID Number: 23228585814 </p>
+    <p id="type"> Type of the account: Saving Account</p>
+    <!-- <p id="Note"> Banker Note: SOURCE OF INCOME IS UNVERIFIED </p> -->
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit2" onclick="submit('closeaccount')">close</button>
+</strong>
+</div>
+
+
+<div class="closeaccount2" id="closeaccount2">
+    <strong>
+        <p id= "name" >Name: Natalie Girgis shohdy </p>
+        <p id="adress">Account Number: 12345002 </p> 
+        <p id="mail" >Pin: 4252</p>
+        <p id="date" >Email: Natalie.shohdy@gmail.com </p>
+        <p id="NID"> ID Number: 3025585519 </p>
+        <p id="type"> Type of the account: current Account</p>
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit3" onclick="submit('closeaccount2')">close</button>
+</strong>
+</div>
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+    
+        </div>
+    
+      
+ 
+</div>
+   </body>
+</html>

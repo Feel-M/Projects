@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="account.css">
+<script src="account.js"></script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="../index.html" >Home</a></li>
+        <li><a href="../Account/account.html" class="active">Account</a></li>
+        <li><a href="../Cards/cards.html">Cards</a></li>
+        <li><a href="../P&T/P&T.html">Payments & Transfers</a></li>
+        <li><a href="../Loans/loans.html">Loans</a></li>
+        <li><a href="../notifications/notifications.html">Notifications</a></li>
+        <li><a href="../Report/report.html">Report</a></li>
+      </ul>
+     
+        <div class="openaccount" id="openaccount">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id ='a2' placeholder="Full Name*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='b2' placeholder="Address*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text"id = 'c2' placeholder="Email*" required><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="date" id ='d2' placeholder="Date of Birth*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text"id = 'e2' placeholder="ID Number*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'f' placeholder="Phone Number*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'g' placeholder="Nationality*">
+            <br><select  id="reason" style="position: absolute; left: 37%; width: 35%;">
+                <option value="Choose account type" selected> Account Type *</option>
+              <option value="Theft">current account</option>
+              <option value="Damaged">saving account</option>
+              <option value="Missing">certificates</option>
+              </select>
+            <label for="" class="confirmation" id="confirmation"> </label>
+            <button class="submit" onclick="submit('openaccount')">Submit</button>
+            <button class="opencancel" onclick="deactivateopen()">Cancel</button>
+        </div>
+        <div class="closeaccount" id="closeaccount">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id ='a' placeholder="Full Name*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'b' placeholder="Account Number*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'c' placeholder="Pin*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'd' placeholder="Email*" required><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'e' placeholder="ID Number*"><br>
+           
+           <label for="" class="confirmation" id="confirmation"> </label>
+            <button class="submit" onclick="submit('closeaccount')">Submit</button>
+            <button class="closecancel" onclick="deactivateclose()">Cancel</button>
+        </div>
+
+
+        <div class="title">Account</div>
+      
+<div class="main">
+    <div class="blur" id="blur">
+    <div class="leftside">
+
+<div class="cards">
+    Active Cards
+    <br>
+   <BR></BR>
+   <img src="Assests/card.jfif" alt="" width="60%"  height="40%" >
+<br>
+<br>
+   <label for="" > Total Amount:        $<label for="" id="cash">7,480</label> </label>
+</div>
+<br>
+<div class="transactions">
+    Transactions
+    <br>
+<ul class="list">
+<li> Starbucks &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>    <a > 5/2/23&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;-$8.20 </a><br> <br>
+<li> Netflix &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><a > 5/2/23&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;-$9.99 </a><br><br>
+<li>  JJ'S &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><a > 5/2/23&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;-$14.50  </a><br><br>
+<li> Sea-Cinema &nbsp;&nbsp;&nbsp;</li><a > 1/2/23&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;-$15</a><br>
+</ul>
+    
+     
+  
+</div>
+
+    </div>
+
+    <div class="rightside">
+<div class="cashback">
+<h1 >&nbsp; Points: <label for="" id="points">3500 pts</label></h1>
+<div class="spendandwin"><h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spend <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; & <br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Win</h1>
+</div>
+<button class="redeem" onclick="redeem()"> Redeem</button>
+    <div class="cashbackpic"></div>
+
+</div>
+<br>
+<div class="open">
+    <h3>Opening an account:</h3>
+<ol>
+    <li>Must be over the age of 18.</li><br>
+    <li>Must have a valid ID.</li><br>
+    <li>Must have a valid Address.</li><br>
+    <li>Must have provide the required fees.</li>
+</ol>
+<button class="openbutton" onclick="activateopen()"> Open  Account</button>
+</div>
+<div class="close"><h3>Closing an account: </h3>
+
+Closing your bank account is a straightforward process that can be done either online or by visiting a branch. If you have made the decision to close your bank account online, follow the link outlined below to ensure a smooth account closure.
+
+<button class="closebutton" onclick="activateclose()"> Close Account</button>
+
+</div>
+
+
+
+    </div>
+
+</div>
+    
+        </div>
+    
+      
+ 
+</div>
+   </body>
+</html>

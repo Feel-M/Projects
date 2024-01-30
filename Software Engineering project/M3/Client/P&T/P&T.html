@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt</title>
+    <link rel="stylesheet" href="P&T.css">
+<script src="P&T.js"></script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="../index.html" >Home</a></li>
+        <li><a href="../Account/account.html" >Account</a></li>
+        <li><a href="../Cards/cards.html">Cards</a></li>
+        <li><a href="../P&T/P&T.html" class="active">Payments & Transfers</a></li>
+        <li><a href="../Loans/loans.html">Loans</a></li>
+        <li><a href="../notifications/notifications.html"  >Notifications</a></li>
+        <li><a href="../Report/report.html">Report</a></li>
+      </ul>
+     
+      
+      <div class="internalapplication" id="internalapplication">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id = 'a' placeholder="Full Name"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'b' placeholder="Account Number"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" id = 'c' placeholder="Account Pin" required><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" id = 'd' placeholder="Destination Account Number "><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'e' placeholder="Transfer Amount "><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <textarea name="message" id="message" cols="40" rows="10" placeholder=""> Transfer Description</textarea>
+
+       
+      
+        <label for="" class="confirmation" id="confirmation"> </label>
+        <button class="submit" onclick="submit('internalapplication')">Submit</button>
+        <button class="internalcancel" onclick="deactivateinternal()">Cancel</button>
+    </div>
+
+    <div class="domesticapplication" id="domesticapplication">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id = 'a2' placeholder="Full Name"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'b2' placeholder="Account Number"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" id = 'c2' placeholder="Account Pin" required><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id = 'd2' placeholder="Destination Bank "><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" id = 'e2' placeholder="Destination Account "><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'f2' placeholder="Transfer Amount "><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <textarea name="message" id="message" cols="40" rows="8" placeholder=""> Transfer Description</textarea>
+
+       
+      
+        <label for="" class="confirmation" id="confirmation"> </label>
+        <button class="submit" onclick="submit('domesticapplication')">Submit</button>
+        <button class="domesticcancel" onclick="deactivatedomestic()">Cancel</button>
+    </div>
+
+    <div class="internationalapplication" id="internationalapplication">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id = 'a3' placeholder="Full Name"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'b3'  placeholder="Account Number"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" id = 'c3' placeholder="Account Pin" required><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id = 'd3' placeholder="Destination Country "><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id = 'e3'  placeholder="Destination Bank "><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" id = 'f3' placeholder="Destination Account "><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" id = 'g3' placeholder="Transfer Amount "><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <textarea name="message" id="message" cols="40" rows="6" placeholder=""> Transfer Description...</textarea>
+
+       
+      
+        <label for="" class="confirmation" id="confirmation"> </label>
+        <button class="submit" onclick="submit('internationalapplication')">Submit</button>
+        <button class="internationalcancel" onclick="deactivateinternational()">Cancel</button>
+    </div>
+
+
+    
+<div class="main">
+    <div class="blur" id="blur">  
+    <div class="leftside">
+
+<div class="notifications">
+    <h3>Payments & Transfers</h3><br><br><br>
+    <div><br><strong> Transfer #4378112:</strong> <br> <br>
+        Transfer Type: Internal Transfer <br>
+        Transfer From: Checking Account <br>
+        Transfer To: Savings Account <br>
+        Amount: $500 <br>
+        Description: Transfer for Savings Goal</div>
+        <br><br><br><br><br><br>
+        <div><br><strong> Transfer #3375112:</strong> <br><br>
+            Transfer Type: Domestic Transfer <br>
+            Transfer From: Checking Account <br>
+            Transfer To: Friend's Bank Account <br>
+            Beneficiary Name: John Doe <br>
+            Beneficiary Bank: ABC Bank <br>
+            Amount: $1,000 <br>
+            Description: Repayment for Dinner Expense        </div>
+        <br><br><br><br><br><br><br>
+        <div><br><strong> Payment #3342132:</strong> <br><br>
+            Payment Type: Electricity Bill <br>
+            Payment From: Checking Account <br>
+            Amount: $109 <br>
+       </div>
+<br>
+
+</div>
+<br>
+
+
+    </div>
+
+    <div class="rightside">
+<div class="announcement">
+    <img class="report" src="Assets/Ad.png" alt="" width="27%" height="100%">
+   
+    <div class="anntitle"><h3> &nbsp; Easy Bill Payments and Seamless Transfers with Bolt</h3></div>
+
+    <div class="article">Take control of your finances with Bolt's comprehensive banking solutions. We are excited to offer you convenient bill payment options and hassle-free transfers, all in one place.</div>
+    
+   
+
+</div>
+<br>
+<div class="reminders">
+   
+
+<div class="payments">
+    <h3> Payments</h3>  
+    <br><br><br>
+    <div><br><strong>Utility Bill (Electricity)</strong>           <p id="electricity">Bill Amount: $130.99</p>  
+       
+         </div><br><br><br>
+        <div><br><strong>Utility Bill (Gas)</strong>            <p id="gas">Bill Amount: $59.99</p> 
+
+        </div>
+        <br><br><br>
+        <div><br><strong>Utility Bill (Water)</strong>           <p id="water">Bill Amount: $100</p> 
+        
+        </div>
+     
+       
+    <select  class="list" id="bills" style="position: absolute; top: 80%;">
+        <option value="Choose Bill" selected >Choose Bill</option>
+        <option value="All" >All</option>
+      <option value="Gas">Gas</option>
+      <option value="Electricity">Electricity</option>
+      <option value="Water">Water</option>
+      
+      </select>
+
+ 
+
+    <button class="button" onclick="pay()"> Pay</button>
+    <a class="paypal" href="http://paypal.com" target="_blank">Use Paypal?</a>
+</div>
+
+<div class="transfers"> 
+    <h3> Transfers</h3>
+    <br><br> <br>
+
+  <p style="color: white
+  ; text-align: center;">At Bolt, transferring funds is quick, secure, and hassle-free. Whether you need to move money internally between your accounts, domestically within the same country, or internationally to another country, we've got you covered. 
+</p>  
+
+
+<div class="column1">
+    <a onclick="activateinternal()" style="color: white;"> <img src="Assets/internal.png" alt="Snow" width="40%" height="20%" style="position: relative; left: 10%;" > <br> internal </a>
+   </div>
+   <div class="column2">
+     <a onclick="activatedomestic()" style="color: white;"><img  src="Assets/domestic.png" alt="Forest" width="40%" height="10%" style="position: relative; left: 10%;" > <br> Domestic</a>
+   </div>
+   <div class="column3">
+     <a onclick="activateinternational()" style="color: white;"><img src="Assets/international.png" alt="Mountains" width="40%" height="10%" style="position: relative; left: 23%;" > <br> international</a>
+   </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+    
+        </div>
+    
+      
+ 
+</div>
+   </body>
+</html>
