@@ -1,0 +1,33 @@
+{
+  "properties": [
+    {
+      "name": "org.hibernate.dialect.Dialect",
+      "type": "java.lang.String",
+      "description": "Description for org.hibernate.dialect.Dialect."
+    },
+    {
+      "name": "javax.persistence.jdbc.url",
+      "type": "java.lang.String",
+      "description": "Description for javax.persistence.jdbc.url."
+    },
+    {
+      "name": "javax.persistence.jdbc.driver",
+      "type": "java.lang.String",
+      "description": "Description for javax.persistence.jdbc.driver."
+    },
+    {
+      "name": "hibernate.connection.url",
+      "type": "java.lang.String",
+      "description": "Description for hibernate.connection.url."
+    },
+    {
+      "name": "spring.jpa.hibernate.dialect",
+      "type": "java.lang.String",
+      "description": "Description for spring.jpa.hibernate.dialect."
+    },
+    {
+      "name": "ddl-auto",
+      "type": "java.lang.String",
+      "description": "Description for ddl-auto."
+    }
+  ] }
