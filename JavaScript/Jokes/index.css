@@ -1,0 +1,79 @@
+body{
+    background-color: #adaaff;
+}
+.titlebox{
+background-color: beige;
+left: 40%;
+top: 5%;
+position: absolute;
+width: 300px;
+font-family: serif;
+font-size: xxx-large;
+border-radius: 8px;
+box-shadow: 5px 10px black;
+border-style: solid;
+}
+
+.jokebox{
+    background-color: white;
+    top: 40%;
+    left: 35%;
+    position: absolute;
+    display: flex;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow:0 30px 35px rgba(0, 0, 0, 0.25);
+    ;
+}
+
+.innertitle{
+    left: 32%;
+position: absolute;
+font-size: 30px;
+background-color: white;
+top: 5%;
+color: black;
+border-radius: 10px;
+font-family: serif;
+border-color: black;
+border-style: solid;
+
+
+}
+.joke{
+    top: 20%;
+left: 10%;
+position: absolute;
+margin: auto;
+background-color: silver;
+color: white;
+width: 440px;
+height: 230px;
+max-width: 400px;
+max-height: 300px;
+border-radius: 10px;
+font-family: serif;
+font-size: large;
+font-weight: bold;
+
+}
+.submit{
+    height: 40px;
+    top: 80%;
+    left: 35%;
+    position: absolute;
+    width: 150px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: large;
+    font-family: serif;
+}
+
+.submit:hover{
+
+    background-color: black;
+    color: white;
+}

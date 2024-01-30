@@ -1,0 +1,42 @@
+body{
+    background-color: gray;
+}
+.colorbox{
+color: black;
+background-color: aqua;
+width: 400px;
+height: 300px;
+position: absolute;
+top: 20%;
+    left: 41%;
+border-radius: 10px;
+text-align: center;
+font-size: large;
+}
+.btn{
+
+    position: absolute;
+
+    width: 400px;
+text-align: center;
+    top: 50%;
+    left: 40%;
+}
+.button{
+ border-radius: 10px;
+    width: 400px ;
+    height: 50px;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: large;
+}
+label{
+width: 30%;
+font-size: xxx-large;
+text-align: center;
+    top: 75%;
+    left: 73%;
+    position: absolute;
+}
+
+
