@@ -1,2 +1,0 @@
-# RandomColor
-A JavaScript project
